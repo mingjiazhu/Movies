@@ -11,53 +11,58 @@
     <title>Movie</title>
 
   </head>
-  <body>
-    <div id='wrapper'>
-      <div id = 'info'>
-        <h1>
-          <span property='v:itemreviewed'>Avengers
-          </span>
-          <span class = 'year'>(2019)</span>
-        </h1>
 
-        <div>
-          <div class='article'>
-            <div class = 'indent'>
-              <div class = 'subjectwrap'>
-                <div class = 'subject'>
-                  <div id = 'mainpic' class>
-                    <img src="
-                    <div id = 'info'>
-      <div id = 'basic'>
-        <span property='v:itemreviewed'>Avengers
-        </span>
-        <span class = 'year'>2019</span>
-      </div>"></a>
-                  </div>
-                  <div id = 'info'>
-                    <span class = 'pl'>category
-                    </span>
-                    /
-                    <span property='v:genre'>action</span>
-                  </div>
-                </div>
+  
+  <body style = 'background-color: #f7e7c3'>
+    <div class ='container'>
+      <div class='introduction'></div>
 
-                <div id = 'ratings'>
-                  <span class = 'ratings_from_diff_web'>ratings
-                  </span>
-                  </div>
-                  <div class = 'average_rating'>
+      <div class='necessary_info'>
 
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- most left -->
+        <div class = 'intro-image' style="float: left; width: 300px;">
+          <img src="https://en.wikipedia.org/wiki/File:Avengers_Endgame_poster.jpg" class='movie poster' alt='Avengers_Endgame_poster_txt' style='max-width: 100%;max-height: 100%;' onerror="this.src='Avengers_Endgame_poster_Sub.jpg'">
         </div>
 
+        <!-- middle -->
+        <div class='title_and_tags' style='float: left; width: 200px; color: #6f42c1;font-family: arial, arial, arial;font-size: 14px;'>
+          <div class='row'>
+            <div class='col'>
+              <h1 class='intro_title'>Avengers_Endgame</h1>
+            </div>
+          </div>
+          <br>
+          <div>tag1: action</div>
+          <br>
+          <div>tag2: drama</div>
+          <br>
+          <div>tag3: another-tag</div>
+          <br>
+        </div>
+
+        <!-- most right -->
+        <div class='ratings_from_diff_web'style='float: right; width: 200px; color: #6f42c1;font-family: arial, arial, arial;font-size: 14px;'>
+          <div class='row_2'>
+            <div class='col_2'>
+              <h1 class='stars'>Ratings</h1>
+            </div>
+          </div>
+          <br>
+
+          <div>IMBD</div>
+          <br>
+          <div>TOMATOS</div>
+          <br>
+          <div>NETFLIX</div>
+          <br>
+          <div>AMAZON</div>
+        </div>
 
       </div>
+
     </div>
+  </body>
+    
 
     <!DOCTYPE html>
     <html>
@@ -65,23 +70,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
 
-    .pl {
+    /*.container {
       margin-top: 100px;
       margin-bottom: 10px;
       margin-left: 200px;
+      top: 1000px;
+      left: 575px;
+    }*/
+
+    /*overall frame work*/
+    .necessary_info{
+      margin-top: 100px;
+      margin-bottom: 10px;
+      margin-left: 200px;
+      top: 1000px;
+      left: 575px;
+      column-count: 3
+      column-gap: 40px;
+      width: 800px
+    }
+
+    /*image*/
+    /*.intro-image{
+      column-width: 100px
+    }*/
+
+    /*title and tags*/
+    .title_and_tags{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      top: 1000px;
+      left: 575px;
+    }
+
+    /*.intro-title {
+      margin-top: 10px;
+      margin-bottom: 100px;
+      margin-left: 400px;
+      top: 1000px;
+      left: 575px;
+    }*/
+
+    .details {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 20px;
       top: 1000px;
       left: 575px;
     }
 
     .ratings_from_diff_web {
-      margin-top: 100px;
+      margin-top: 10px;
       margin-bottom: 10px;
-      margin-left: 200px;
+      margin-left: 50px;
       top: 1000px;
       left: 575px;
     }
 
-    .nav input[type=text] {
+    /*.nav input[type=text] {
       float: center;
       padding: 6px;
       margin-top: 8px;
@@ -93,7 +140,7 @@
     .nav input[type=text] {
       border: 1px solid #ccc;
       }
-    }
+    }*/
     </style>
     </head>
     <body>
